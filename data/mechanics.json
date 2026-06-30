@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mec-001",
+    "name": "Buddy Bonus",
+    "description": "Increases engagement for daily play and sustains session frequency.",
+    "adoption": 84
+  },
+  {
+    "id": "mec-002",
+    "name": "Weather Boost",
+    "description": "Aligns spawn rates with events to strengthen feature resonance.",
+    "adoption": 76
+  },
+  {
+    "id": "mec-003",
+    "name": "Timed Research",
+    "description": "Creates cadence and offers a strong retention loop for limited windows.",
+    "adoption": 81
+  }
+]

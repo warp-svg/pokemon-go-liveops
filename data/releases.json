@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rel-001",
+    "title": "Mega Evolution Drop",
+    "year": 2026,
+    "month": 7,
+    "focus": "Community Events",
+    "confidence": 0.84,
+    "category": "Seasonal",
+    "description": "A mid-year spike that pairs raid momentum with social engagement."
+  },
+  {
+    "id": "rel-002",
+    "title": "Pokémon GO Fest",
+    "year": 2026,
+    "month": 9,
+    "focus": "Global Campaign",
+    "confidence": 0.91,
+    "category": "Flagship",
+    "description": "A global activation that should anchor the second half of the year."
+  },
+  {
+    "id": "rel-003",
+    "title": "Winter Spotlight",
+    "year": 2026,
+    "month": 12,
+    "focus": "Retention Ladder",
+    "confidence": 0.78,
+    "category": "Seasonal",
+    "description": "A lower-risk, high-reach release for holiday play."
+  }
+]

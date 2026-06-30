@@ -1,0 +1,26 @@
+[
+  {
+    "id": "evt-001",
+    "title": "Summer Spotlight",
+    "year": 2026,
+    "month": 7,
+    "impact": "high",
+    "description": "A broad event designed to lift weekly active users."
+  },
+  {
+    "id": "evt-002",
+    "title": "Raid Weekend",
+    "year": 2026,
+    "month": 8,
+    "impact": "medium",
+    "description": "Encourages repeat play in the lead-up to a flagship release."
+  },
+  {
+    "id": "evt-003",
+    "title": "Holiday Sprint",
+    "year": 2026,
+    "month": 11,
+    "impact": "high",
+    "description": "A conversion-focused event for the year-end retention cycle."
+  }
+]

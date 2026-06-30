@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pkm-001",
+    "name": "Aegislash",
+    "generation": 6,
+    "released": true,
+    "type": ["Steel", "Ghost"],
+    "popularityTier": "Core",
+    "category": "Legendary",
+    "region": "Kalos",
+    "releaseWindow": "Q3 2026",
+    "description": "High-urgency raid candidate with strong event synergy."
+  },
+  {
+    "id": "pkm-002",
+    "name": "Zarude",
+    "generation": 5,
+    "released": false,
+    "type": ["Dark", "Grass"],
+    "popularityTier": "High",
+    "category": "Mythic",
+    "region": "Unova",
+    "releaseWindow": "Q4 2026",
+    "description": "A premium content anchor for late-year momentum."
+  },
+  {
+    "id": "pkm-003",
+    "name": "Meloetta",
+    "generation": 5,
+    "released": true,
+    "type": ["Normal", "Psychic"],
+    "popularityTier": "Mid",
+    "category": "Special",
+    "region": "Unova",
+    "releaseWindow": "Q2 2026",
+    "description": "Supports themed events with lower production cost."
+  },
+  {
+    "id": "pkm-004",
+    "name": "Volcanion",
+    "generation": 6,
+    "released": false,
+    "type": ["Fire", "Water"],
+    "popularityTier": "High",
+    "category": "Legendary",
+    "region": "Kalos",
+    "releaseWindow": "Q1 2027",
+    "description": "A strong flagship reserve for early next-year planning."
+  },
+  {
+    "id": "pkm-005",
+    "name": "Genesect",
+    "generation": 5,
+    "released": true,
+    "type": ["Bug", "Steel"],
+    "popularityTier": "Core",
+    "category": "Special",
+    "region": "Unova",
+    "releaseWindow": "Q1 2026",
+    "description": "High retention value through timed quest chains."
+  },
+  {
+    "id": "pkm-006",
+    "name": "Keldeo",
+    "generation": 5,
+    "released": false,
+    "type": ["Water", "Fighting"],
+    "popularityTier": "Mid",
+    "category": "Legendary",
+    "region": "Unova",
+    "releaseWindow": "Q2 2027",
+    "description": "Useful for a lower-risk seasonal release slot."
+  }
+]

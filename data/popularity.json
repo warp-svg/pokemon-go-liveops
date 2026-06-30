@@ -1,0 +1,17 @@
+[
+  {
+    "tier": "Core",
+    "score": 92,
+    "description": "High-frequency evergreen content"
+  },
+  {
+    "tier": "High",
+    "score": 84,
+    "description": "Strong pull for flagship moments"
+  },
+  {
+    "tier": "Mid",
+    "score": 70,
+    "description": "Useful support content with moderate impact"
+  }
+]
