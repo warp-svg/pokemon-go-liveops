@@ -1,0 +1,42 @@
+[
+  {
+    "tier": "Core",
+    "score": 60,
+    "description": "Core popularity tier"
+  },
+  {
+    "tier": "High",
+    "score": 68,
+    "description": "High popularity tier"
+  },
+  {
+    "tier": "Mid",
+    "score": 76,
+    "description": "Mid popularity tier"
+  },
+  {
+    "tier": "Core",
+    "score": 84,
+    "description": "Core popularity tier"
+  },
+  {
+    "tier": "High",
+    "score": 92,
+    "description": "High popularity tier"
+  },
+  {
+    "tier": "Mid",
+    "score": 100,
+    "description": "Mid popularity tier"
+  },
+  {
+    "tier": "Core",
+    "score": 108,
+    "description": "Core popularity tier"
+  },
+  {
+    "tier": "High",
+    "score": 116,
+    "description": "High popularity tier"
+  }
+]

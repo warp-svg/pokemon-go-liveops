@@ -1,14 +1,15 @@
 import { OverviewKpis } from "@/components/analytics/overview-kpis";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getExecutiveSnapshot, getRunwaySeries } from "@/lib/calculations/analytics";
-import { getEventData, getMechanicsData, getPokemonData, getReleaseData } from "@/lib/data-loader";
+import { getEvents, getPopularityScores, getPvPData, getReleasedPokemon, getUnreleasedPokemon } from "@/lib/repository";
 
 export default async function HomePage() {
-  const [pokemon, releases, events, mechanics] = await Promise.all([
-    getPokemonData(),
-    getReleaseData(),
-    getEventData(),
-    getMechanicsData()
+  const [events, popularity, pvp, released, unreleased] = await Promise.all([
+    getEvents(),
+    getPopularityScores(),
+    getPvPData(),
+    getReleasedPokemon(),
+    getUnreleasedPokemon()
   ]);
 
   const snapshot = getExecutiveSnapshot();
@@ -22,7 +23,7 @@ export default async function HomePage() {
         <p className="mt-3 max-w-2xl text-slate-400">An internal strategy dashboard for sequencing content, timing releases, and protecting long-term engagement.</p>
       </header>
 
-      <OverviewKpis snapshot={snapshot} releases={releases} pokemon={pokemon} />
+      <OverviewKpis snapshot={snapshot} releases={[]} pokemon={[]} />
 
       <section className="grid gap-6 lg:grid-cols-2">
         <Card>
@@ -31,10 +32,10 @@ export default async function HomePage() {
             <CardTitle>Momentum calendar</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {events.map((event) => (
-              <div key={event.id} className="flex items-center justify-between rounded-xl border border-slate-800 px-3 py-2">
-                <span>{event.title}</span>
-                <span className="text-sm text-slate-400">{event.impact}</span>
+            {events.map((event, index) => (
+              <div key={`${event.name}-${index}`} className="flex items-center justify-between rounded-xl border border-slate-800 px-3 py-2">
+                <span>{event.name}</span>
+                <span className="text-sm text-slate-400">{event.type}</span>
               </div>
             ))}
           </CardContent>
@@ -46,12 +47,10 @@ export default async function HomePage() {
             <CardTitle>Execution levers</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {mechanics.map((mechanic) => (
-              <div key={mechanic.id} className="rounded-xl border border-slate-800 px-3 py-2">
-                <p className="font-medium">{mechanic.name}</p>
-                <p className="mt-1 text-sm text-slate-400">{mechanic.description}</p>
-              </div>
-            ))}
+            <div className="rounded-xl border border-slate-800 px-3 py-2">
+              <p className="font-medium">Static dataset snapshot</p>
+              <p className="mt-1 text-sm text-slate-400">Released {released.length} · Unreleased {unreleased.length} · Popularity entries {popularity.length} · PvP rankings {pvp.length}</p>
+            </div>
           </CardContent>
         </Card>
       </section>

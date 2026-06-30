@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import type { EventEntry, MechanicsEntry, PokemonEntry, ReleaseEntry } from "./types";
+import type { EventRecord, MechanicsRecord, PokemonRecord, ReleaseRecord } from "./domain/types";
 
 const dataDir = path.join(process.cwd(), "data");
 
@@ -11,17 +11,17 @@ async function readJson<T>(file: string): Promise<T> {
 }
 
 export async function getPokemonData() {
-  return readJson<PokemonEntry[]>("pokemon.json");
+  return readJson<PokemonRecord[]>("pokemon.json");
 }
 
 export async function getReleaseData() {
-  return readJson<ReleaseEntry[]>("releases.json");
+  return readJson<ReleaseRecord[]>("releases.json");
 }
 
 export async function getEventData() {
-  return readJson<EventEntry[]>("events.json");
+  return readJson<EventRecord[]>("events.json");
 }
 
 export async function getMechanicsData() {
-  return readJson<MechanicsEntry[]>("mechanics.json");
+  return readJson<MechanicsRecord[]>("mechanics.json");
 }

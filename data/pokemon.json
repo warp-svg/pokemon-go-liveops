@@ -9,7 +9,14 @@
     "category": "Legendary",
     "region": "Kalos",
     "releaseWindow": "Q3 2026",
-    "description": "High-urgency raid candidate with strong event synergy."
+    "description": "High-urgency raid candidate with strong event synergy.",
+    "popularity": 83,
+    "nostalgiaFactor": 31,
+    "pvpRelevance": 78,
+    "rarityFactor": 76,
+    "releaseProbabilityBias": 0.87,
+    "generationWeight": 1.12,
+    "contentClass": "legendary"
   },
   {
     "id": "pkm-002",
@@ -21,7 +28,14 @@
     "category": "Mythic",
     "region": "Unova",
     "releaseWindow": "Q4 2026",
-    "description": "A premium content anchor for late-year momentum."
+    "description": "A premium content anchor for late-year momentum.",
+    "popularity": 88,
+    "nostalgiaFactor": 42,
+    "pvpRelevance": 61,
+    "rarityFactor": 90,
+    "releaseProbabilityBias": 0.93,
+    "generationWeight": 1.05,
+    "contentClass": "mythic"
   },
   {
     "id": "pkm-003",
@@ -33,7 +47,14 @@
     "category": "Special",
     "region": "Unova",
     "releaseWindow": "Q2 2026",
-    "description": "Supports themed events with lower production cost."
+    "description": "Supports themed events with lower production cost.",
+    "popularity": 67,
+    "nostalgiaFactor": 58,
+    "pvpRelevance": 44,
+    "rarityFactor": 64,
+    "releaseProbabilityBias": 0.71,
+    "generationWeight": 0.98,
+    "contentClass": "special"
   },
   {
     "id": "pkm-004",
@@ -45,7 +66,14 @@
     "category": "Legendary",
     "region": "Kalos",
     "releaseWindow": "Q1 2027",
-    "description": "A strong flagship reserve for early next-year planning."
+    "description": "A strong flagship reserve for early next-year planning.",
+    "popularity": 81,
+    "nostalgiaFactor": 27,
+    "pvpRelevance": 69,
+    "rarityFactor": 88,
+    "releaseProbabilityBias": 0.84,
+    "generationWeight": 1.09,
+    "contentClass": "legendary"
   },
   {
     "id": "pkm-005",
@@ -57,7 +85,14 @@
     "category": "Special",
     "region": "Unova",
     "releaseWindow": "Q1 2026",
-    "description": "High retention value through timed quest chains."
+    "description": "High retention value through timed quest chains.",
+    "popularity": 74,
+    "nostalgiaFactor": 41,
+    "pvpRelevance": 72,
+    "rarityFactor": 67,
+    "releaseProbabilityBias": 0.79,
+    "generationWeight": 0.96,
+    "contentClass": "special"
   },
   {
     "id": "pkm-006",
@@ -69,6 +104,13 @@
     "category": "Legendary",
     "region": "Unova",
     "releaseWindow": "Q2 2027",
-    "description": "Useful for a lower-risk seasonal release slot."
+    "description": "Useful for a lower-risk seasonal release slot.",
+    "popularity": 69,
+    "nostalgiaFactor": 46,
+    "pvpRelevance": 57,
+    "rarityFactor": 71,
+    "releaseProbabilityBias": 0.73,
+    "generationWeight": 0.94,
+    "contentClass": "legendary"
   }
 ]

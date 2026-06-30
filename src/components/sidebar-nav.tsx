@@ -7,6 +7,7 @@ const links = [
   { href: "/runway", label: "Content Runway" },
   { href: "/optimizer", label: "Release Optimizer" },
   { href: "/insights", label: "Strategic Insights" },
+  { href: "/model-assumptions", label: "Model Assumptions" },
   { href: "/chat", label: "Ask the Director" }
 ];
 

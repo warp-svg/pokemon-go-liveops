@@ -1,15 +1,32 @@
-import pokemonJson from "../../../data/pokemon.json";
-import releasesJson from "../../../data/releases.json";
-import eventsJson from "../../../data/events.json";
-import mechanicsJson from "../../../data/mechanics.json";
-import popularityJson from "../../../data/popularity.json";
+import { readFileSync } from "fs";
+import path from "path";
 import type { EventRecord, FilterState, MechanicsRecord, PokemonRecord, PopularityTier, ReleaseRecord } from "./types";
 
-export const pokemonData = pokemonJson as PokemonRecord[];
-export const releaseData = releasesJson as ReleaseRecord[];
-export const eventData = eventsJson as EventRecord[];
-export const mechanicsData = mechanicsJson as MechanicsRecord[];
-export const popularityData = popularityJson as PopularityTier[];
+const dataDir = path.join(process.cwd(), "data");
+const generatedDir = path.join(dataDir, "generated");
+
+function loadJsonSync<T>(fileName: string, fallbackFileName?: string): T {
+  const candidatePaths = [path.join(generatedDir, fileName)];
+  if (fallbackFileName) {
+    candidatePaths.push(path.join(dataDir, fallbackFileName));
+  }
+
+  for (const candidatePath of candidatePaths) {
+    try {
+      return JSON.parse(readFileSync(candidatePath, "utf8")) as T;
+    } catch {
+      // continue to the next fallback
+    }
+  }
+
+  return [] as T;
+}
+
+export const pokemonData = loadJsonSync<PokemonRecord[]>("pokemon-core.json", "pokemon.json");
+export const releaseData = loadJsonSync<ReleaseRecord[]>("release-timeline.json", "releases.json");
+export const eventData = loadJsonSync<EventRecord[]>("events.json", "events.json");
+export const mechanicsData = loadJsonSync<MechanicsRecord[]>("mechanics.json", "mechanics.json");
+export const popularityData = loadJsonSync<PopularityTier[]>("popularity.json", "popularity.json");
 
 export function getFilteredPokemon(filters: FilterState) {
   return pokemonData.filter((entry) => {

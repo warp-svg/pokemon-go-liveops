@@ -1,5 +1,6 @@
 import { eventData, mechanicsData, pokemonData, popularityData, releaseData } from "@/lib/domain/data";
 import type { FilterState } from "@/lib/domain/types";
+import { scorePokemonEntries } from "@/lib/scoring/pokemonScoring";
 
 export function getExecutiveSnapshot() {
   const released = pokemonData.filter((entry) => entry.released).length;
@@ -33,30 +34,6 @@ export function getRunwaySeries() {
       total: entries.length
     };
   });
-}
-
-export function getStrategicInsights() {
-  const released = pokemonData.filter((entry) => entry.released).length;
-  const runway = getRunwaySeries();
-  const healthiest = runway.reduce((best, current) => (current.remaining > best.remaining ? current : best), runway[0]);
-
-  return [
-    {
-      title: "Release cadence is still healthy",
-      description: `The portfolio still carries ${released} released and ${pokemonData.length - released} unreleased items, giving leadership room to spread major launches without over-saturating the calendar.`,
-      priority: "High"
-    },
-    {
-      title: "High-value content remains concentrated",
-      description: `The strongest remaining runway sits in ${healthiest.category.toLowerCase()} content, where the backlog is broadest and likely to support several quarters of steady engagement.`,
-      priority: "Medium"
-    },
-    {
-      title: "Mechanics adoption is a leverage point",
-      description: "Mechanics with durable adoption should be used as the backbone for event-based campaigns rather than isolated one-off drops.",
-      priority: "High"
-    }
-  ];
 }
 
 export function getOptimizerProjection({ budget, cadence, confidence }: { budget: number; cadence: number; confidence: number }) {
@@ -96,4 +73,8 @@ export function getFilterDefaults(): FilterState {
     type: "all",
     popularityTier: "all"
   };
+}
+
+export function getScoredPokemonSnapshot() {
+  return scorePokemonEntries(pokemonData);
 }

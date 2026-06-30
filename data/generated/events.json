@@ -1,0 +1,44 @@
+[
+  {
+    "id": "evt-001",
+    "title": "Community Day: Pikachu",
+    "year": 2026,
+    "month": 7,
+    "impact": "high",
+    "description": "Core event with boosted spawn rate.",
+    "startDate": "2026-07-12",
+    "endDate": "2026-07-12",
+    "type": "community_day",
+    "featuredPokemon": [
+      "pkm-001"
+    ],
+    "mechanicsIntroduced": [
+      "Incense boost"
+    ],
+    "bonuses": [
+      "Bonus XP",
+      "Extra Stardust"
+    ]
+  },
+  {
+    "id": "evt-002",
+    "title": "GO Fest: Raid Surge",
+    "year": 2026,
+    "month": 8,
+    "impact": "high",
+    "description": "Raid-heavy event driving high-value content.",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-03",
+    "type": "go_fest",
+    "featuredPokemon": [
+      "pkm-002"
+    ],
+    "mechanicsIntroduced": [
+      "Raid bonuses"
+    ],
+    "bonuses": [
+      "Raid passes",
+      "Catch bonus"
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "pkm-001",
+    "name": "Bulbasaur",
+    "generation": 1,
+    "released": true,
+    "type": [
+      "Electric"
+    ],
+    "popularityTier": "Core",
+    "category": "Special",
+    "region": "Kanto",
+    "releaseWindow": "Q3 2026",
+    "description": "bulbasaur is included in the build-time generated snapshot.",
+    "popularity": 70,
+    "nostalgiaFactor": 30,
+    "pvpRelevance": 60,
+    "rarityFactor": 55,
+    "releaseProbabilityBias": 0.7,
+    "generationWeight": 0.9,
+    "contentClass": "special"
+  },
+  {
+    "id": "pkm-002",
+    "name": "Ivysaur",
+    "generation": 1,
+    "released": false,
+    "type": [
+      "Psychic"
+    ],
+    "popularityTier": "High",
+    "category": "Legendary",
+    "region": "Kanto",
+    "releaseWindow": "Q3 2026",
+    "description": "ivysaur is included in the build-time generated snapshot.",
+    "popularity": 74,
+    "nostalgiaFactor": 36,
+    "pvpRelevance": 65,
+    "rarityFactor": 62,
+    "releaseProbabilityBias": 0.73,
+    "generationWeight": 0.9500000000000001,
+    "contentClass": "legendary"
+  },
+  {
+    "id": "pkm-003",
+    "name": "Venusaur",
+    "generation": 2,
+    "released": true,
+    "type": [
+      "Water"
+    ],
+    "popularityTier": "Mid",
+    "category": "Mythic",
+    "region": "Hoenn",
+    "releaseWindow": "Q3 2026",
+    "description": "venusaur is included in the build-time generated snapshot.",
+    "popularity": 78,
+    "nostalgiaFactor": 42,
+    "pvpRelevance": 70,
+    "rarityFactor": 69,
+    "releaseProbabilityBias": 0.76,
+    "generationWeight": 1,
+    "contentClass": "mythic"
+  },
+  {
+    "id": "pkm-004",
+    "name": "Charmander",
+    "generation": 3,
+    "released": false,
+    "type": [
+      "Fire"
+    ],
+    "popularityTier": "Core",
+    "category": "Mythic",
+    "region": "Johto",
+    "releaseWindow": "Q1 2027",
+    "description": "charmander is included in the build-time generated snapshot.",
+    "popularity": 82,
+    "nostalgiaFactor": 48,
+    "pvpRelevance": 75,
+    "rarityFactor": 76,
+    "releaseProbabilityBias": 0.7899999999999999,
+    "generationWeight": 1.05,
+    "contentClass": "special"
+  },
+  {
+    "id": "pkm-005",
+    "name": "Charmeleon",
+    "generation": 4,
+    "released": true,
+    "type": [
+      "Grass"
+    ],
+    "popularityTier": "High",
+    "category": "Mythic",
+    "region": "Sinnoh",
+    "releaseWindow": "Q1 2027",
+    "description": "charmeleon is included in the build-time generated snapshot.",
+    "popularity": 86,
+    "nostalgiaFactor": 54,
+    "pvpRelevance": 80,
+    "rarityFactor": 83,
+    "releaseProbabilityBias": 0.82,
+    "generationWeight": 1.1,
+    "contentClass": "special"
+  },
+  {
+    "id": "pkm-006",
+    "name": "Charizard",
+    "generation": 5,
+    "released": false,
+    "type": [
+      "Normal"
+    ],
+    "popularityTier": "Mid",
+    "category": "Mythic",
+    "region": "Unova",
+    "releaseWindow": "Q1 2027",
+    "description": "charizard is included in the build-time generated snapshot.",
+    "popularity": 90,
+    "nostalgiaFactor": 60,
+    "pvpRelevance": 85,
+    "rarityFactor": 90,
+    "releaseProbabilityBias": 0.85,
+    "generationWeight": 1.15,
+    "contentClass": "special"
+  },
+  {
+    "id": "pkm-007",
+    "name": "Squirtle",
+    "generation": 5,
+    "released": true,
+    "type": [
+      "Fairy"
+    ],
+    "popularityTier": "Core",
+    "category": "Mythic",
+    "region": "Kalos",
+    "releaseWindow": "Q1 2027",
+    "description": "squirtle is included in the build-time generated snapshot.",
+    "popularity": 94,
+    "nostalgiaFactor": 66,
+    "pvpRelevance": 90,
+    "rarityFactor": 97,
+    "releaseProbabilityBias": 0.8799999999999999,
+    "generationWeight": 1.2000000000000002,
+    "contentClass": "special"
+  },
+  {
+    "id": "pkm-008",
+    "name": "Wartortle",
+    "generation": 6,
+    "released": false,
+    "type": [
+      "Dragon"
+    ],
+    "popularityTier": "High",
+    "category": "Mythic",
+    "region": "Alola",
+    "releaseWindow": "Q1 2027",
+    "description": "wartortle is included in the build-time generated snapshot.",
+    "popularity": 98,
+    "nostalgiaFactor": 72,
+    "pvpRelevance": 95,
+    "rarityFactor": 104,
+    "releaseProbabilityBias": 0.9099999999999999,
+    "generationWeight": 1.25,
+    "contentClass": "special"
+  }
+]

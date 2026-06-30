@@ -2,12 +2,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select } from "@/components/ui/select";
 import { getFilterDefaults, getFilterOptions } from "@/lib/calculations/analytics";
 import { getFilteredPokemon } from "@/lib/domain/data";
+import { getScoredPokemonSnapshot } from "@/lib/calculations/analytics";
 import { getPopularityTierLabel, getTypeSummary } from "@/lib/mapping/pokemon";
 
 export default async function CoveragePage() {
   const filters = getFilterDefaults();
   const options = getFilterOptions();
   const filtered = getFilteredPokemon(filters);
+  const scored = getScoredPokemonSnapshot();
 
   return (
     <div className="space-y-6">
@@ -78,6 +80,7 @@ export default async function CoveragePage() {
                 <p>Type: {getTypeSummary(entry.type)}</p>
                 <p>Tier: {getPopularityTierLabel(entry.popularityTier)}</p>
                 <p>Release window: {entry.releaseWindow}</p>
+                <p>Engagement score: {scored.find((item) => item.id === entry.id)?.engagement_score}</p>
               </div>
             </CardContent>
           </Card>

@@ -1,0 +1,58 @@
+[
+  {
+    "pokemonId": "pkm-001",
+    "greatLeagueRank": 10,
+    "ultraLeagueRank": 12,
+    "masterLeagueRank": 8,
+    "metaScore": 70
+  },
+  {
+    "pokemonId": "pkm-002",
+    "greatLeagueRank": 11,
+    "ultraLeagueRank": 13,
+    "masterLeagueRank": 9,
+    "metaScore": 75
+  },
+  {
+    "pokemonId": "pkm-003",
+    "greatLeagueRank": 12,
+    "ultraLeagueRank": 14,
+    "masterLeagueRank": 10,
+    "metaScore": 80
+  },
+  {
+    "pokemonId": "pkm-004",
+    "greatLeagueRank": 13,
+    "ultraLeagueRank": 15,
+    "masterLeagueRank": 11,
+    "metaScore": 85
+  },
+  {
+    "pokemonId": "pkm-005",
+    "greatLeagueRank": 14,
+    "ultraLeagueRank": 16,
+    "masterLeagueRank": 12,
+    "metaScore": 90
+  },
+  {
+    "pokemonId": "pkm-006",
+    "greatLeagueRank": 15,
+    "ultraLeagueRank": 17,
+    "masterLeagueRank": 13,
+    "metaScore": 95
+  },
+  {
+    "pokemonId": "pkm-007",
+    "greatLeagueRank": 16,
+    "ultraLeagueRank": 18,
+    "masterLeagueRank": 14,
+    "metaScore": 100
+  },
+  {
+    "pokemonId": "pkm-008",
+    "greatLeagueRank": 17,
+    "ultraLeagueRank": 19,
+    "masterLeagueRank": 15,
+    "metaScore": 105
+  }
+]

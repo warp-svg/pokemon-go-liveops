@@ -1,0 +1,70 @@
+[
+  {
+    "pokemonId": "pkm-001",
+    "releasedInGO": true,
+    "firstReleaseDate": "2026-01-01",
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-002",
+    "releasedInGO": false,
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-003",
+    "releasedInGO": true,
+    "firstReleaseDate": "2026-01-01",
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-004",
+    "releasedInGO": false,
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-005",
+    "releasedInGO": true,
+    "firstReleaseDate": "2026-01-01",
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-006",
+    "releasedInGO": false,
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-007",
+    "releasedInGO": true,
+    "firstReleaseDate": "2026-01-01",
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  },
+  {
+    "pokemonId": "pkm-008",
+    "releasedInGO": false,
+    "availabilityTypes": [
+      "wild",
+      "raid"
+    ]
+  }
+]
