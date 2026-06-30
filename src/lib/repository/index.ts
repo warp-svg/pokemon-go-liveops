@@ -14,17 +14,50 @@ async function readJson<T>(file: string): Promise<T> {
 }
 
 export async function getAllPokemon() {
-  return readJson<Array<{ id: number; name: string; generation: number; types: string[]; isLegendary: boolean; isMythical: boolean; evolvesFrom: number | null; releasedInGO: boolean; firstReleaseDate?: string; availabilityTypes: string[]; popularityScore: number; pvpMetaScore: number; greatLeagueRank: number; ultraLeagueRank: number; masterLeagueRank: number; }>>("pokemon-core.json");
+  return readJson<Array<{
+    id: number;
+    name: string;
+    generation: number;
+    types: string[];
+    height: number;
+    weight: number;
+    baseExperience: number;
+    isLegendary: boolean;
+    isMythical: boolean;
+    isBaby: boolean;
+    forms: string[];
+    evolvesFrom: string | null;
+    sprite: string;
+    species: string;
+    released?: boolean;
+    popularityTier?: string;
+    category?: string;
+    region?: string;
+    releaseWindow?: string;
+    description?: string;
+    popularity?: number;
+    nostalgiaFactor?: number;
+    pvpRelevance?: number;
+    rarityFactor?: number;
+    releaseProbabilityBias?: number;
+    generationWeight?: number;
+    contentClass?: string;
+  }>>("pokemon-core.json");
+}
+
+export async function getPokemonById(id: number) {
+  const all = await getAllPokemon();
+  return all.find((entry) => entry.id === id) ?? null;
 }
 
 export async function getReleasedPokemon() {
   const all = await getAllPokemon();
-  return all.filter((entry) => entry.releasedInGO);
+  return all.filter((entry) => entry.released !== false);
 }
 
 export async function getUnreleasedPokemon() {
   const all = await getAllPokemon();
-  return all.filter((entry) => !entry.releasedInGO);
+  return all.filter((entry) => entry.released === false);
 }
 
 export async function getEvents() {

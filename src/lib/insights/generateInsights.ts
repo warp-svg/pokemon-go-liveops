@@ -1,3 +1,4 @@
+import { pokemonData } from "@/lib/domain/data";
 import { getRankedPokemonCandidates } from "@/lib/scoring/pokemonScoring";
 import { generateReleaseSimulation } from "@/lib/simulation/releaseEngine";
 import type { Insight } from "@/lib/domain/types";
@@ -5,13 +6,16 @@ import type { Insight } from "@/lib/domain/types";
 export function generateInsights() {
   const ranked = getRankedPokemonCandidates();
   const simulation = generateReleaseSimulation({ months: 6 });
+  const fallbackPool = ranked.length > 0 ? ranked : pokemonData.slice(0, 3);
+  const firstCandidate = fallbackPool[0];
+  const secondCandidate = fallbackPool[1];
 
   const exhaustionRisk = {
     title: "Content exhaustion risk",
-    finding: `${ranked.slice(0, 2).map((entry) => entry.name).join(" and ")} are carrying the highest release priority, which suggests the plan is front-loading the strongest content pool.`,
+    finding: `${fallbackPool.slice(0, 2).map((entry) => entry?.name ?? "the lead candidate").join(" and ")} are carrying the highest release priority, which suggests the plan is front-loading the strongest content pool.`,
     evidence: [
-      `${ranked[0].name} leads the release priority queue`,
-      `${ranked[1].name} is the second-highest leverage candidate`
+      `${firstCandidate?.name ?? "The lead candidate"} leads the release priority queue`,
+      `${secondCandidate?.name ?? "The second candidate"} is the second-highest leverage candidate`
     ],
     recommendation: "Spread flagship candidates across the next two quarters to avoid over-concentrating the highest-value content.",
     severity: "high" as const,
